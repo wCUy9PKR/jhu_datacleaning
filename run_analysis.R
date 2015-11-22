@@ -25,10 +25,8 @@ y_test <- read.table(file.path(test_data, "y_test.txt"), col.names="activity")
 X <- bind_rows(X_train, X_test)
 y <- bind_rows(y_train, y_test)
 subject <- bind_rows(subject_train, subject_test)
-rm(list=ls(pattern="train|test|data|url"))
 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-# 4. Appropriately labels the data set with descriptive variable names. 
 mean_std_vars <- grep("mean\\(|std\\(", features$variable_name)
 X = select(X, mean_std_vars)
 names(X) = features$variable_name[mean_std_vars]
@@ -38,8 +36,16 @@ activity_lookup = activity_labels$activity
 y = mutate(y, activity=activity_lookup[activity])
 tidy_har <- bind_cols(subject, X, y)
 
+# 4. Appropriately labels the data set with descriptive variable names. 
+names(tidy_har) <- gsub("Acc", "Acceleration", names(tidy_har))
+names(tidy_har) <- gsub("Mag", "Magnitude", names(tidy_har))
+names(tidy_har) <- gsub("Gyro", "Gyroscope", names(tidy_har))
+names(tidy_har) <- gsub("^t", "time", names(tidy_har))
+names(tidy_har) <- gsub("^f", "frequency", names(tidy_har))
+
 # 5. From the data set in step 4, creates a second, independent tidy data set with
 # the average of each variable for each activity and each subject.
 tidy_har_mean <- tidy_har %>%
   group_by(subject, activity) %>%
   summarize_each(funs(mean))
+write.table(tidy_har_mean, file = "tidy_har_mean.txt", row.names=FALSE)
