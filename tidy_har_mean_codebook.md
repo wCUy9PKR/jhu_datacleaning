@@ -29,73 +29,73 @@ Calculates the mean by subject/activity for each of the mean/standard deviation 
 
 Variables with "Acceleration" in the name are in units of g (standard gravity).  Variables with "Gyroscope" in the name are in units of radians/second.
 
-$ subject                                          : unique ID of subject performing activity  
-$ activity                                         : name of activity on of six activities subjects performed during experiment: "LAYING" "SITTING" "STANDING" "WALKING" "WALKING_UPSTAIRS" "WALKING_DOWNSTAIRS"
-$ timeBodyAcceleration-mean()-X                    : Mean of means of acceleration of subject's body along X-axis as measured by accelerometer
-$ timeBodyAcceleration-mean()-Y                    : Mean of means of acceleration of subject's body along Y-axis as measured by accelerometer
-$ timeBodyAcceleration-mean()-Z                    : Mean of means acceleration of subject's body along Z-axis as measured by accelerometer
-$ timeBodyAcceleration-std()-X                     : Mean of standard deviations of acceleration of subject's body along X-axis as measured by accelerometer
-$ timeBodyAcceleration-std()-Y                     : Mean of standard deviations of acceleration of subject's body along Y-axis as measured by accelerometer
-$ timeBodyAcceleration-std()-Z                     : Mean of standard deviations of acceleration of subject's body along Z-axis as measured by accelerometer
-$ timeGravityAcceleration-mean()-X                 : Mean of means of acceleration due to gravity along along X-axis 
-$ timeGravityAcceleration-mean()-Y                 : Mean of means of acceleration due to gravity along along Y-axis 
-$ timeGravityAcceleration-mean()-Z                 : Mean of means of acceleration due to gravity along along Z-axis 
-$ timeGravityAcceleration-std()-X                  : Mean of standard deviations of acceleration due to gravity along along X-axis 
-$ timeGravityAcceleration-std()-Y                  : Mean of standard deviations of acceleration due to gravity along along Y-axis 
-$ timeGravityAcceleration-std()-Z                  : Mean of standard deviations of acceleration due to gravity along along Z-axis 
-$ timeBodyAccelerationJerk-mean()-X                : Mean of means of acceleration jerk of subject's body along X-axis as measured by accelerometer
-$ timeBodyAccelerationJerk-mean()-Y                : Mean of means of acceleration jerk of subject's body along Y-axis as measured by accelerometer
-$ timeBodyAccelerationJerk-mean()-Z                : Mean of means of acceleration jerk of subject's body along Z-axis as measured by accelerometer
-$ timeBodyAccelerationJerk-std()-X                 : Mean of standard deviations of acceleration jerk of subject's body along X-axis as measured by accelerometer
-$ timeBodyAccelerationJerk-std()-Y                 : Mean of standard deviations of acceleration jerk of subject's body along Y-axis as measured by accelerometer
-$ timeBodyAccelerationJerk-std()-Z                 : Mean of standard deviations of acceleration jerk of subject's body along Z-axis as measured by accelerometer
-$ timeBodyGyroscope-mean()-X                       : Mean of means of angular velocity of subject's body about X-axis as measured by gyroscope
-$ timeBodyGyroscope-mean()-Y                       : Mean of means of angular velocity of subject's body about Y-axis as measured by gyroscope
-$ timeBodyGyroscope-mean()-Z                       : Mean of means of angular velocity of subject's body about Z-axis as measured by gyroscope
-$ timeBodyGyroscope-std()-X                        : Mean of standard deviations of angular velocity of subject's body about X-axis as measured by gyroscope
-$ timeBodyGyroscope-std()-Y                        : Mean of standard deviations of angular velocity of subject's body about Y-axis as measured by gyroscope
-$ timeBodyGyroscope-std()-Z                        : Mean of standard deviations of angular velocity of subject's body about Z-axis as measured by gyroscope
-$ timeBodyGyroscopeJerk-mean()-X                   : Mean of means of angular velocity jerk of subject's body about about X-axis as measured by gyroscope
-$ timeBodyGyroscopeJerk-mean()-Y                   : Mean of means of angular velocity jerk of subject's body about about Y-axis as measured by gyroscope
-$ timeBodyGyroscopeJerk-mean()-Z                   : Mean of means of angular velocity jerk of subject's body about about Z-axis as measured by gyroscope
-$ timeBodyGyroscopeJerk-std()-X                    : Mean of standard deviations of angular velocity jerk of subject's body about about X-axis as measured by gyroscope
-$ timeBodyGyroscopeJerk-std()-Y                    : Mean of standard deviations of angular velocity jerk of subject's body about about Y-axis as measured by gyroscope
-$ timeBodyGyroscopeJerk-std()-Z                    : Mean of standard deviations of angular velocity jerk of subject's body about about Z-axis as measured by gyroscope
-$ timeBodyAccelerationMagnitude-mean()             : Mean of means of the magnitude of acceleration of subject's body as measured by accelerometer
-$ timeBodyAccelerationMagnitude-std()              : Mean of standard deviations of the magnitude of acceleration of subject's body as measured by accelerometer
-$ timeGravityAccelerationMagnitude-mean()          : Mean of means of the magnitude of accelerationdue to gravity as measured by accelerometer
-$ timeGravityAccelerationMagnitude-std()           : Mean of standard deviations of the magnitude of accelerationdue to gravity as measured by accelerometer
-$ timeBodyAccelerationJerkMagnitude-mean()         : Mean of means of the magnitude of jerk acceleration of subject's body as measured by accelerometer
-$ timeBodyAccelerationJerkMagnitude-std()          : Mean of means of the magnitude of jerk accelerationdue to gravity as measured by accelerometer
-$ timeBodyGyroscopeMagnitude-mean()                : Mean of means of the magnitude of angular velocity of subject's body as measured by gyroscope
-$ timeBodyGyroscopeMagnitude-std()                 : Mean of standard deviations of the magnitude of angular velocity of subject's body as measured by gyroscope
-$ timeBodyGyroscopeJerkMagnitude-mean()            : Mean of means of the magnitude of jerk angular velocity of subject's body as measured by gyroscope
-$ timeBodyGyroscopeJerkMagnitude-std()             : Mean of standard deviations of the magnitude of jerk angular velocity of subject's body as measured by gyroscope
-$ frequencyBodyAcceleration-mean()-X               : Mean of means of FFT of acceleration of subject's body along X-axis as measured by accelerometer
-$ frequencyBodyAcceleration-mean()-Y               : Mean of means of FFT of acceleration of subject's body along Y-axis as measured by accelerometer
-$ frequencyBodyAcceleration-mean()-Z               : Mean of means of FFT of acceleration of subject's body along Z-axis as measured by accelerometer
-$ frequencyBodyAcceleration-std()-X                : Mean of standard deviations of FFT of acceleration of subject's body along X-axis as measured by accelerometer
-$ frequencyBodyAcceleration-std()-Y                : Mean of standard deviations of FFT of acceleration of subject's body along Y-axis as measured by accelerometer
-$ frequencyBodyAcceleration-std()-Z                : Mean of standard deviations of FFT of acceleration of subject's body along Z-axis as measured by accelerometer
-$ frequencyBodyAccelerationJerk-mean()-X           : Mean of means of FFT of acceleration jerk of subject's body along X-axis as measured by accelerometer
-$ frequencyBodyAccelerationJerk-mean()-Y           : Mean of means of FFT of acceleration jerk of subject's body along Y-axis as measured by accelerometer
-$ frequencyBodyAccelerationJerk-mean()-Z           : Mean of means of FFT of acceleration jerk of subject's body along Z-axis as measured by accelerometer
-$ frequencyBodyAccelerationJerk-std()-X            : Mean of standard deviations of FFT of acceleration jerk of subject's body along X-axis as measured by accelerometer
-$ frequencyBodyAccelerationJerk-std()-Y            : Mean of standard deviations of FFT of acceleration jerk of subject's body along Y-axis as measured by accelerometer
-$ frequencyBodyAccelerationJerk-std()-Z            : Mean of standard deviations of FFT of acceleration jerk of subject's body along Z-axis as measured by accelerometer
-$ frequencyBodyGyroscope-mean()-X                  : Mean of means of FFT of angular velocity of subject's body about X-axis as measured by gyroscope
-$ frequencyBodyGyroscope-mean()-Y                  : Mean of means of FFT of angular velocity of subject's body about Y-axis as measured by gyroscope
-$ frequencyBodyGyroscope-mean()-Z                  : Mean of means of FFT of angular velocity of subject's body about Z-axis as measured by gyroscope
-$ frequencyBodyGyroscope-std()-X                   : Mean of standard deviations of angular velocity of subject's body about X-axis as measured by gyroscope
-$ frequencyBodyGyroscope-std()-Y                   : Mean of standard deviations of angular velocity of subject's body about Y-axis as measured by gyroscope
-$ frequencyBodyGyroscope-std()-Z                   : Mean of standard deviations of angular velocity of subject's body about Z-axis as measured by gyroscope
-$ frequencyBodyAccelerationMagnitude-mean()        : Mean of means of FFT of the magnitude of acceleration of subject's body as measured by accelerometer
-$ frequencyBodyAccelerationMagnitude-std()         : Mean of standard deviations of FFT of the magnitude of acceleration of subject's body as measured by accelerometer
-$ frequencyBodyBodyAccelerationJerkMagnitude-mean(): Mean of means of FFT of the magnitude of jerk acceleration of subject's body as measured by accelerometer
-$ frequencyBodyBodyAccelerationJerkMagnitude-std() : Mean of standard deviations of FFT of the magnitude of jerk acceleration of subject's body as measured by accelerometer
-$ frequencyBodyBodyGyroscopeMagnitude-mean()       : Mean of means of FFT of the magnitude of angular velocity of subject's body as measured by gyroscope
-$ frequencyBodyBodyGyroscopeMagnitude-std()        : Mean of standard deviations of FFT of the magnitude of angular velocity of subject's body as measured by gyroscope
-$ frequencyBodyBodyGyroscopeJerkMagnitude-mean()   : Mean of means of FFT of the magnitude of jerk angular velocity of subject's body as measured by gyroscope
-$ frequencyBodyBodyGyroscopeJerkMagnitude-std()    : Mean of standard deviations of FFT of the magnitude of jerk angular velocity of subject's body as measured by gyroscope
+* subject                                          : unique ID of subject performing activity  
+* activity                                         : name of activity on of six activities subjects performed during experiment: "LAYING" "SITTING" "STANDING" "WALKING" "WALKING_UPSTAIRS" "WALKING_DOWNSTAIRS"
+* timeBodyAcceleration-mean()-X                    : Mean of means of acceleration of the sensor along X-axis as measured by accelerometer
+* timeBodyAcceleration-mean()-Y                    : Mean of means of acceleration of the sensor along Y-axis as measured by accelerometer
+* timeBodyAcceleration-mean()-Z                    : Mean of means acceleration of the sensor along Z-axis as measured by accelerometer
+* timeBodyAcceleration-std()-X                     : Mean of standard deviations of acceleration of the sensor along X-axis as measured by accelerometer
+* timeBodyAcceleration-std()-Y                     : Mean of standard deviations of acceleration of the sensor along Y-axis as measured by accelerometer
+* timeBodyAcceleration-std()-Z                     : Mean of standard deviations of acceleration of the sensor along Z-axis as measured by accelerometer
+* timeGravityAcceleration-mean()-X                 : Mean of means of acceleration due to gravity along along X-axis 
+* timeGravityAcceleration-mean()-Y                 : Mean of means of acceleration due to gravity along along Y-axis 
+* timeGravityAcceleration-mean()-Z                 : Mean of means of acceleration due to gravity along along Z-axis 
+* timeGravityAcceleration-std()-X                  : Mean of standard deviations of acceleration due to gravity along along X-axis 
+* timeGravityAcceleration-std()-Y                  : Mean of standard deviations of acceleration due to gravity along along Y-axis 
+* timeGravityAcceleration-std()-Z                  : Mean of standard deviations of acceleration due to gravity along along Z-axis 
+* timeBodyAccelerationJerk-mean()-X                : Mean of means of acceleration jerk of the sensor along X-axis as measured by accelerometer
+* timeBodyAccelerationJerk-mean()-Y                : Mean of means of acceleration jerk of the sensor along Y-axis as measured by accelerometer
+* timeBodyAccelerationJerk-mean()-Z                : Mean of means of acceleration jerk of the sensor along Z-axis as measured by accelerometer
+* timeBodyAccelerationJerk-std()-X                 : Mean of standard deviations of acceleration jerk of the sensor along X-axis as measured by accelerometer
+* timeBodyAccelerationJerk-std()-Y                 : Mean of standard deviations of acceleration jerk of the sensor along Y-axis as measured by accelerometer
+* timeBodyAccelerationJerk-std()-Z                 : Mean of standard deviations of acceleration jerk of the sensor along Z-axis as measured by accelerometer
+* timeBodyGyroscope-mean()-X                       : Mean of means of angular velocity of the sensor about X-axis as measured by gyroscope
+* timeBodyGyroscope-mean()-Y                       : Mean of means of angular velocity of the sensor about Y-axis as measured by gyroscope
+* timeBodyGyroscope-mean()-Z                       : Mean of means of angular velocity of the sensor about Z-axis as measured by gyroscope
+* timeBodyGyroscope-std()-X                        : Mean of standard deviations of angular velocity of the sensor about X-axis as measured by gyroscope
+* timeBodyGyroscope-std()-Y                        : Mean of standard deviations of angular velocity of the sensor about Y-axis as measured by gyroscope
+* timeBodyGyroscope-std()-Z                        : Mean of standard deviations of angular velocity of the sensor about Z-axis as measured by gyroscope
+* timeBodyGyroscopeJerk-mean()-X                   : Mean of means of angular velocity jerk of the sensor about about X-axis as measured by gyroscope
+* timeBodyGyroscopeJerk-mean()-Y                   : Mean of means of angular velocity jerk of the sensor about about Y-axis as measured by gyroscope
+* timeBodyGyroscopeJerk-mean()-Z                   : Mean of means of angular velocity jerk of the sensor about about Z-axis as measured by gyroscope
+* timeBodyGyroscopeJerk-std()-X                    : Mean of standard deviations of angular velocity jerk of the sensor about about X-axis as measured by gyroscope
+* timeBodyGyroscopeJerk-std()-Y                    : Mean of standard deviations of angular velocity jerk of the sensor about about Y-axis as measured by gyroscope
+* timeBodyGyroscopeJerk-std()-Z                    : Mean of standard deviations of angular velocity jerk of the sensor about about Z-axis as measured by gyroscope
+* timeBodyAccelerationMagnitude-mean()             : Mean of means of the magnitude of acceleration of the sensor as measured by accelerometer
+* timeBodyAccelerationMagnitude-std()              : Mean of standard deviations of the magnitude of acceleration of the sensor as measured by accelerometer
+* timeGravityAccelerationMagnitude-mean()          : Mean of means of the magnitude of accelerationdue to gravity as measured by accelerometer
+* timeGravityAccelerationMagnitude-std()           : Mean of standard deviations of the magnitude of accelerationdue to gravity as measured by accelerometer
+* timeBodyAccelerationJerkMagnitude-mean()         : Mean of means of the magnitude of jerk acceleration of the sensor as measured by accelerometer
+* timeBodyAccelerationJerkMagnitude-std()          : Mean of means of the magnitude of jerk accelerationdue to gravity as measured by accelerometer
+* timeBodyGyroscopeMagnitude-mean()                : Mean of means of the magnitude of angular velocity of the sensor as measured by gyroscope
+* timeBodyGyroscopeMagnitude-std()                 : Mean of standard deviations of the magnitude of angular velocity of the sensor as measured by gyroscope
+* timeBodyGyroscopeJerkMagnitude-mean()            : Mean of means of the magnitude of jerk angular velocity of the sensor as measured by gyroscope
+* timeBodyGyroscopeJerkMagnitude-std()             : Mean of standard deviations of the magnitude of jerk angular velocity of the sensor as measured by gyroscope
+* frequencyBodyAcceleration-mean()-X               : Mean of means of FFT of acceleration of the sensor along X-axis as measured by accelerometer
+* frequencyBodyAcceleration-mean()-Y               : Mean of means of FFT of acceleration of the sensor along Y-axis as measured by accelerometer
+* frequencyBodyAcceleration-mean()-Z               : Mean of means of FFT of acceleration of the sensor along Z-axis as measured by accelerometer
+* frequencyBodyAcceleration-std()-X                : Mean of standard deviations of FFT of acceleration of the sensor along X-axis as measured by accelerometer
+* frequencyBodyAcceleration-std()-Y                : Mean of standard deviations of FFT of acceleration of the sensor along Y-axis as measured by accelerometer
+* frequencyBodyAcceleration-std()-Z                : Mean of standard deviations of FFT of acceleration of the sensor along Z-axis as measured by accelerometer
+* frequencyBodyAccelerationJerk-mean()-X           : Mean of means of FFT of acceleration jerk of the sensor along X-axis as measured by accelerometer
+* frequencyBodyAccelerationJerk-mean()-Y           : Mean of means of FFT of acceleration jerk of the sensor along Y-axis as measured by accelerometer
+* frequencyBodyAccelerationJerk-mean()-Z           : Mean of means of FFT of acceleration jerk of the sensor along Z-axis as measured by accelerometer
+* frequencyBodyAccelerationJerk-std()-X            : Mean of standard deviations of FFT of acceleration jerk of the sensor along X-axis as measured by accelerometer
+* frequencyBodyAccelerationJerk-std()-Y            : Mean of standard deviations of FFT of acceleration jerk of the sensor along Y-axis as measured by accelerometer
+* frequencyBodyAccelerationJerk-std()-Z            : Mean of standard deviations of FFT of acceleration jerk of the sensor along Z-axis as measured by accelerometer
+* frequencyBodyGyroscope-mean()-X                  : Mean of means of FFT of angular velocity of the sensor about X-axis as measured by gyroscope
+* frequencyBodyGyroscope-mean()-Y                  : Mean of means of FFT of angular velocity of the sensor about Y-axis as measured by gyroscope
+* frequencyBodyGyroscope-mean()-Z                  : Mean of means of FFT of angular velocity of the sensor about Z-axis as measured by gyroscope
+* frequencyBodyGyroscope-std()-X                   : Mean of standard deviations of angular velocity of the sensor about X-axis as measured by gyroscope
+* frequencyBodyGyroscope-std()-Y                   : Mean of standard deviations of angular velocity of the sensor about Y-axis as measured by gyroscope
+* frequencyBodyGyroscope-std()-Z                   : Mean of standard deviations of angular velocity of the sensor about Z-axis as measured by gyroscope
+* frequencyBodyAccelerationMagnitude-mean()        : Mean of means of FFT of the magnitude of acceleration of the sensor as measured by accelerometer
+* frequencyBodyAccelerationMagnitude-std()         : Mean of standard deviations of FFT of the magnitude of acceleration of the sensor as measured by accelerometer
+* frequencyBodyBodyAccelerationJerkMagnitude-mean(): Mean of means of FFT of the magnitude of jerk acceleration of the sensor as measured by accelerometer
+* frequencyBodyBodyAccelerationJerkMagnitude-std() : Mean of standard deviations of FFT of the magnitude of jerk acceleration of the sensor as measured by accelerometer
+* frequencyBodyBodyGyroscopeMagnitude-mean()       : Mean of means of FFT of the magnitude of angular velocity of the sensor as measured by gyroscope
+* frequencyBodyBodyGyroscopeMagnitude-std()        : Mean of standard deviations of FFT of the magnitude of angular velocity of the sensor as measured by gyroscope
+* frequencyBodyBodyGyroscopeJerkMagnitude-mean()   : Mean of means of FFT of the magnitude of jerk angular velocity of the sensor as measured by gyroscope
+* frequencyBodyBodyGyroscopeJerkMagnitude-std()    : Mean of standard deviations of FFT of the magnitude of jerk angular velocity of the sensor as measured by gyroscope
 
 [id1]: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
